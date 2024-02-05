@@ -84,16 +84,16 @@ function renderGallery(images) {
       }) => `
       <a class="card-item" href="${largeImageURL}" data-lightbox="gallery-item" aria-role="button" >
       <div class="card-box">
-            <img src="${webformatURL}" class="card-img" alt="${tags}" height="250" loading="lazy" />
+            <img src="${webformatURL}" class="card-img" alt="${tags}" loading="lazy" />
             </div>
             <div class="info">
             <p class="info-item">
-            <b>Likes:</b> ${likes}</p>
+            <b>likes</b> ${likes}</p>
             <p class="info-item">
-            <b>Views:</b> ${views}</p>
+            <b>views</b> ${views}</p>
             <p class="info-item">
-            <b>Comments:</b> ${comments}</p>
-            <p class="info-item"><b>Downloads:</b> ${downloads}</p>
+            <b>comments</b> ${comments}</p>
+            <p class="info-item"><b>downloads</b> ${downloads}</p>
             </div>
             </a>`
     )
