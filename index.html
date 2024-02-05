@@ -5,49 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Images search</title>
-  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERABEQAAAAAQEAEBAAAAAAAQAAEAAAAAABABEQAAAAAAEAEAAAAAAAAQAQEAAAAAABABAQAAAAABEQERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAAxj8AANa/AAD3vwAA9j8AAPb/AAD2vwAA9r8AAOI/AAD//wAA//8AAP//AAD//wAA">
+  <link rel="icon" type="image/x-icon" href="./favicon_js.ico">
   
   <script type="module" crossorigin src="/goit-advancedjs-hw-04/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-04/assets/vendor-7bde92d0.js">
+  <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-04/assets/vendor-b42c18af.js">
   <link rel="stylesheet" href="/goit-advancedjs-hw-04/assets/vendor-a51daae5.css">
-  <link rel="stylesheet" href="/goit-advancedjs-hw-04/assets/index-10c40100.css">
+  <link rel="stylesheet" href="/goit-advancedjs-hw-04/assets/index-6ca7c84e.css">
 </head>
 
 <body>
-  <div>
-    <form class="search-form" id="search-form">
-      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-      <button type="submit">Search</button>
+  <section class="wrapper">
+
+    <div class="search__header">
+    <form class="search-form" id="search-form" action="http://thecodeblock.com">
+        <input type="search" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button type="submit" value="search">&nbsp;</button>
     </form>
-  </div>
+</div>
 
-  <!-- Елемент div.gallery спочатку міститься в HTML документі, і в нього необхідно рендерити розмітку карток зображень. Під
-час пошуку за новим ключовим словом необхідно повністю очищати вміст галереї, щоб не змішувати результати -->
-  <div class="gallery">
-    <!-- Картки зображень /Шаблон розмітки картки одного зображення для галереї.-->
-    <div class="photo-card">
-      <img src="" alt="" loading="lazy" />
-      <div class="info">
-        <p class="info-item">
-          <b>Likes</b>
-        </p>
-        <p class="info-item">
-          <b>Views</b>
-        </p>
-        <p class="info-item">
-          <b>Comments</b>
-        </p>
-        <p class="info-item">
-          <b>Downloads</b>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- HTML документ вже містить розмітку кнопки, по кліку на яку, необхідно виконувати запит за наступною групою зображень і
-  додавати розмітку до вже існуючих елементів галереї -->
-  <button type="button" class="load-more js-loader is-hidden">Load more</button>
-
+    <div class="gallery"></div>
+    <button type="button" class="load-more is-hidden">Load more</button>
+  </section>
 
   
 </body>
