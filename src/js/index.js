@@ -17,6 +17,7 @@ let totalHits = 0;
 
 async function handleFormSubmit(evt) {
   evt.preventDefault();
+  hideLoadMoreBtn();
 
   page.value = 1;
   totalHits = 0;
