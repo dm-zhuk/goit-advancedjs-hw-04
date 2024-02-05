@@ -5,7 +5,6 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
 
 :root {
@@ -22,4 +21,77 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.wrapper {
+  padding-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card-box {
+  height: 100%;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc((100% - 60px) / 4);
+  box-shadow: 0.5px 1px 1px 0px rgba(0, 0, 0, 0.22);
+  transition: box-shadow .3s ease;
+}
+
+.card-item:hover,
+.card-item:focus {
+  box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  object-fit: cover;
+  height: 100%;
+  min-height: 240px;
+}
+
+.info {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 12px;
+  height: 56px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.load-more {
+  margin: 20px auto 0;
+  height: 42px;
+  padding: 0 56px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #4F5FB8;
+  border: none;
+  border-radius: 6px;
+  transition: box-shadow .3s ease;
+}
+
+.load-more:hover,
+.load-more:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.025);
+}
+
+.is-hidden {
+  display: none;
 }

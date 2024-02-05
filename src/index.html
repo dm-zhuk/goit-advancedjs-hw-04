@@ -5,45 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Images search</title>
-  <link rel="icon" type="image/x-icon" href="./public/favicon_js.ico">
+  <link rel="icon" type="image/x-icon" href="./favicon_js.ico">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <div>
-    <form class="search-form" id="search-form">
-      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-      <button type="submit">Search</button>
-    </form>
-  </div>
+  <section class="wrapper">
 
-  <!-- Елемент div.gallery спочатку міститься в HTML документі, і в нього необхідно рендерити розмітку карток зображень. Під
-час пошуку за новим ключовим словом необхідно повністю очищати вміст галереї, щоб не змішувати результати -->
-  <div class="gallery">
-    <!-- Картки зображень /Шаблон розмітки картки одного зображення для галереї.-->
-    <div class="photo-card">
-      <img src="" alt="" loading="lazy" />
-      <div class="info">
-        <p class="info-item">
-          <b>Likes</b>
-        </p>
-        <p class="info-item">
-          <b>Views</b>
-        </p>
-        <p class="info-item">
-          <b>Comments</b>
-        </p>
-        <p class="info-item">
-          <b>Downloads</b>
-        </p>
-      </div>
-    </div>
-  </div>
+    <load="partials/header.html" />
 
-  <!-- HTML документ вже містить розмітку кнопки, по кліку на яку, необхідно виконувати запит за наступною групою зображень і
-  додавати розмітку до вже існуючих елементів галереї -->
-  <button type="button" class="load-more js-loader is-hidden">Load more</button>
-
+    <div class="gallery"></div>
+    <button type="button" class="load-more is-hidden">Load more</button>
+  </section>
 
   <script src="./js/index.js" type="module"></script>
 </body>
